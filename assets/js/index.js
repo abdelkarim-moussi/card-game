@@ -113,6 +113,7 @@ let deslikeCard = (e) => {
       deslikedCards.push(card);
       e.parentElement.parentElement.remove();
     }
+    console.log("card id", cardId);
   });
 };
 
@@ -142,6 +143,8 @@ let displayCards = () => {
   showResultBtn.style.display = "none";
   cardsContainer.style.display = "none";
 };
+
+let styleCards = () => {};
 
 console.log("cards", cards);
 showResultBtn.addEventListener("click", displayCards);
