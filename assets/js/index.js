@@ -10,74 +10,73 @@ let cards = [
     title: "Butterfly",
     description:
       "Butterflies are winged insects from the lepidopteran suborder Rhopalocera",
-    image: "../assets/imgs/butterfly.jpg",
+    image: "./assets/imgs/butterfly.jpg",
   },
   {
     title: "gray cat",
     description:
       "Cats conserve energy by sleeping for an average of 13 to14 hours a day",
-    image: "../assets/imgs/cat.jpg",
+    image: "./assets/imgs/cat.jpg",
   },
   {
     title: "beautiful bird",
     description:
       "Les Oiseaux (Aves) sont une classe de Vertébrés tétrapodes caractérisée par la bipédie",
-    image: "../assets/imgs/bird.jpg",
+    image: "./assets/imgs/bird.jpg",
   },
   {
     title: "chameleon",
     description:
       "Les Caméléonidés (Chamaeleonidae) sont une famille de sauriens surtout arboricoles",
-    image: "../assets/imgs/chameleon.jpg",
+    image: "./assets/imgs/chameleon.jpg",
   },
   {
     title: "chevanon",
     description: "chevanon is one of the most beautifull fishes in the world",
-    image: "../assets/imgs/chevanon.jpg",
+    image: "./assets/imgs/chevanon.jpg",
   },
   {
     title: "eagle",
     description:
       "Eagles are powerful birds of prey heralded for their strength",
-    image: "../assets/imgs/eagle.jpg",
+    image: "./assets/imgs/eagle.jpg",
   },
   {
     title: "elephant",
     description:
       "Elephants are proboscidian mammals of the Elephantidae family.",
-    image: "../assets/imgs/elephant.jpg",
+    image: "./assets/imgs/elephant.jpg",
   },
   {
     title: "owl",
     description:
       "Owls are birds from the order Strigiformes which includes over 200 species",
-    image: "../assets/imgs/owl.jpg",
+    image: "./assets/imgs/owl.jpg",
   },
   {
     title: "geraffe",
     description:
       "The giraffe (Giraffa camelopardalis) is a species of artiodactyl ungulate mammals",
-    image: "../assets/imgs/geraffe.jpg",
+    image: "./assets/imgs/geraffe.jpg",
   },
   {
     title: "parrot",
     description:
       "Parrots are primarily birds of the tropics. Their distribution encompasses",
-    image: "../assets/imgs/parrot.jpg",
+    image: "./assets/imgs/parrot.jpg",
   },
 
   {
     title: "monkey",
     description:
       "Monkeys are intelligent animals that are good at solving problems. Almost all types live together in groups",
-    image: "../assets/imgs/monkey.jpg",
+    image: "./assets/imgs/monkey.jpg",
   },
 ];
 // let img = document.createElement("img");
 // img.src = "../imgs/bg2.jpg";
 let likedCards = [];
 let deslikedCards = [];
-
 
 cardsContainer.innerHTML = "";
 cards.map((card, cardId) => {
