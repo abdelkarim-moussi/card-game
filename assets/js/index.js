@@ -4,6 +4,7 @@ let deslikedCardsContainer = document.getElementById(
   "desliked-cards_container"
 );
 let showResultBtn = document.getElementById("resultBtn");
+
 let cards = [
   {
     title: "Butterfly",
@@ -76,11 +77,13 @@ let cards = [
 // img.src = "../imgs/bg2.jpg";
 let likedCards = [];
 let deslikedCards = [];
+
+
 cardsContainer.innerHTML = "";
 cards.map((card, cardId) => {
   cardsContainer.innerHTML += `
   <div class="card-block" id="${cardId}">
-      <div class="card" >
+      <div class="card" draggable="true" >
           <img src="${card.image}">
           <h4 class="title">${card.title}</h4>
           <p class="description">
@@ -144,7 +147,13 @@ let displayCards = () => {
   cardsContainer.style.display = "none";
 };
 
-let styleCards = () => {};
+// let styleCards = () => {};
 
 console.log("cards", cards);
 showResultBtn.addEventListener("click", displayCards);
+
+let drag = () => {
+  cards.map((card, cardId) => {
+    let singleCard = document.getElementById(cardId);
+  });
+};
