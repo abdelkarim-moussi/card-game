@@ -151,8 +151,36 @@ let displayCards = () => {
 console.log("cards", cards);
 showResultBtn.addEventListener("click", displayCards);
 
-let drag = () => {
+cards.map((card, cardId) => {
+  let singleCard = document.getElementById(cardId);
+  singleCard.addEventListener("dragstart", (ev) => {
+    console.log("dragstart");
+
+    ev.dataTransfer.clearData();
+
+    ev.dataTransfer.setData("text/plain", ev.target.id);
+  });
+
+  likedCardsContainer.addEventListener("dragover", (ev) => {
+    ev.preventDefault();
+    console.log("dragover");
+  });
+
+  likedCardsContainer.addEventListener("drop", (ev) => {
+    ev.preventDefault();
+    console.log("drop");
+    if (singleCard.id == cardId) {
+      likedCards.push(card);
+      card.remove();
+    }
+  });
+});
+
+let drop = (e) => {
+  e.preventDefault();
+
   cards.map((card, cardId) => {
-    let singleCard = document.getElementById(cardId);
+    if (e.parentElement.parentElement == cardId) {
+    }
   });
 };
